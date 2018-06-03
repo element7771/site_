@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <title>Easy for You: Check Our Articlese</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div id = "header">
+        <div class = "text">
+          <br><h1>Study with us</h1> <br>
+        </div>
+        </div>
+
+  <nav class="navbar navbar-default">
+     <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active-link"><a href="index.html">HOME</a></li>
+        <li class="active-link"><a href="articles.html">VIDEO</a></li>
+        <li class="active-link"><a href="inform.html">ABOUT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+  </header>
+      <div class="content">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="panel panel-default">
+                <div class = "panel-heading">
+                  <h2>Study with James and Emma | English Lessons (engVid)</h2>
+                </div>
+                  <div class="panel-body">
+                    <p>If you TRY, you can do anything! <br>
+
+It's always been my belief that you cannot put information in other people's heads. If you find a way to show them something, they can use their own intelligence to learn. This is my approach to teaching, trying to be both informative while allowing the students to find their own way of learning.</p> 
+
+<p>I've spent the last 12 years teaching in various capacities. I've taught martial arts to kids and developed a curriculum that was geared specifically to enhance their development. </p> 
+
+<p>I spent several years working with children suffering from autism and Asperger's - trying to help them learn to deal with the world around them and to learn from their environment. Finally, it was while helping a child that I was asked to work at the Toronto School Board. While I was there, I helped out with kids who were learning English, and my love of teaching ESL began.</p><br><hr><br>
+
+                    <div  id = "video_slider">
+                      <iframe id="slider" width="560" height="315" src="https://www.youtube.com/embed/IDToW3e43Ss" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      <p></p>
+                      <button class = "buttons" onclick="prev()">Prev</button>
+                      <button class = "buttons" onclick="next()">Next</button>
+                    </div>
+
+                    <script type="text/javascript">
+                      var video = ["https://www.youtube.com/embed/A-63Yawo0zI","https://www.youtube.com/embed/_mw9-uk_QFk","https://www.youtube.com/embed/KZxswM3Xa4A","https://www.youtube.com/embed/ORbBbupFzpc","https://www.youtube.com/embed/50syDdhrVPc","https://www.youtube.com/embed/CPnveccPS0k","https://www.youtube.com/embed/k98VNRLEisE"];
+                      var num = 0;
+
+                      function next() {
+                        var slider = document.getElementById("slider");
+                        num++;
+                        if(num>=video.length)
+                        {
+                          num = 0;
+                        }
+                        slider.src = video[num];
+                      }
+
+                       function prev() {
+                        var slider = document.getElementById("slider");
+                        num--;
+                        if(num < 0)
+                        {
+                          num = video.length-1;
+                        }
+                        slider.src = video[num];
+                      }
+                    </script>
+
+                   </div>
+                 </div>
+               </div>
+             <div class="col-md-4">
+              <div class="panel panel-default">
+           <div class = "panel-heading">
+            <h2>More helpful information</h2>
+          </div>
+          <div class="panel-body">
+
+            <script src="js/printTime.js"></script>
+            <div id="timedisplay"></div>
+
+                     <ul class = "links">
+                       <li><a href="https://www.grammarly.com/blog/adjective/">Adjectives</a></li>
+                       <li><a href="https://www.grammarly.com/blog/adverb/">Adverbs</a></li>
+                       <li><a href="https://www.grammarly.com/blog/articles/">Articles</a></li>
+                       <li><a href="https://www.grammarly.com/blog/conjunctions/">Conjunctions</a></li>
+                       <li><a href="https://www.grammarly.com/blog/interjections/">Interjections</a></li>
+                       <li><a href="https://www.grammarly.com/blog/nouns/">Nouns</a></li>
+                       <li><a href="https://www.grammarly.com/blog/prepositions/">Prepositions</a></li>
+                     </ul>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+<footer>
+    <div class="container">
+      <div class="panel panel-body">
+        <p class="pull-left"> 
+       © Easy for You, 2018 by Ivan Kramarenko
+        </p>
+      </div>
+    </div>  
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("p.pull-left").css("color", "red");
+    </script>
+   </body>
+</html>
